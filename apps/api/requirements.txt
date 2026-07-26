@@ -4,7 +4,7 @@ sqlalchemy==2.0.41
 psycopg[binary]==3.2.9
 pydantic-settings==2.10.1
 celery==5.5.3
-redis==6.2.0
+redis==8.0.1
 httpx==0.28.1
 beautifulsoup4==4.13.4
 python-dateutil==2.9.0.post0
