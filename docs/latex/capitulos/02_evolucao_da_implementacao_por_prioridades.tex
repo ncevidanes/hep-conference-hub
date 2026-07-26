@@ -1,0 +1,41 @@
+\chapter{Evolução da implementação por prioridades}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.16\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.51\textwidth}}
+\toprule
+\textbf{\textbf{Etapa}} & \textbf{\textbf{Tema}} & \textbf{\textbf{Resultado}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Etapa}} & \textbf{\textbf{Tema}} & \textbf{\textbf{Resultado}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+1 & Estado temporal do evento & Classificação em futuro, em andamento, concluído ou desconhecido; radar padrão sem eventos finalizados. \\
+2 & Separação entre submissão e inscrição & Chamadas de trabalhos e janelas de inscrição passaram a ser entidades independentes. \\
+3 & Páginas internas e conflitos & Crawler passou a visitar chamadas, datas importantes, autores e inscrição, preservando evidências conflitantes. \\
+4 & Links específicos & Criação de recursos tipados para submissão, inscrição, programa, cronograma, contribuições e proceedings. \\
+5 & Auditoria e confiança & Exibição de fonte, trecho de evidência, data da última verificação, confiança e recência. \\
+Expansão & América Latina & Filtro regional, catálogo regional separado e spiders de eventos e descoberta. \\
+6 & Histórico pesquisável & Ainda pendente: arquivo dedicado para eventos concluídos, mantendo materiais científicos acessíveis. \\
+\end{longtable}
+\end{center}
+
+\section{Estratégia incremental}
+
+A implementação foi conduzida por patches versionados e por pacotes completos consolidados. Cada etapa foi aplicada somente após:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.25em]
+\item backup da árvore vigente;
+\item execução de patch em modo de simulação (\texttt{--dry-run});
+\item verificação de arquivos \texttt{.rej} e \texttt{.orig};
+\item execução da suíte de testes;
+\item reconstrução dos contêineres afetados;
+\item execução do seed e validação da API.
+\end{enumerate}

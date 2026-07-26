@@ -1,0 +1,13 @@
+\chapter{Processamento assíncrono}
+
+Celery separa atualizações demoradas do ciclo HTTP da API. O worker executa tarefas; o beat agenda rotinas. Redis atua como broker. Essa separação evita que uma consulta do usuário precise esperar a coleta externa.
+
+\section{Cuidados operacionais}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item Limitar a concorrência do worker em máquinas com pouca memória;
+\item Executar o worker com usuário não root em ambiente de produção;
+\item Verificar se os módulos de tarefas estão registrados;
+\item Acompanhar logs de worker e beat separadamente;
+\item Configurar \texttt{vm.overcommit\_memory=1} quando recomendado pelo Redis.
+\end{itemize}

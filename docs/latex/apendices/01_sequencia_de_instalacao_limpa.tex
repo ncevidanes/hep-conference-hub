@@ -1,0 +1,17 @@
+\chapter{Sequência de instalação limpa}
+
+\begin{lstlisting}
+git clone <repositorio> hep-conference-hub
+cd hep-conference-hub
+cp .env.example .env
+# Ajustar DATABASE_URL e REDIS_URL
+
+docker compose config -q
+docker compose up --build -d postgres redis
+sleep 6
+docker compose up -d api
+sleep 5
+curl http://localhost:8000/health
+docker compose up -d worker beat web
+docker compose exec api python -m app.seed
+\end{lstlisting}

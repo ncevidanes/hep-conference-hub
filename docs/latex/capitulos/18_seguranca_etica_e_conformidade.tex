@@ -1,0 +1,40 @@
+\chapter{Segurança, ética e conformidade}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item Respeitar robots.txt e termos de uso de cada site;
+\item Usar um User-Agent identificável com endereço real de contato;
+\item Evitar concorrência agressiva e coletas repetidas sem necessidade;
+\item Não publicar automaticamente candidatos sem validação oficial;
+\item Não armazenar dados pessoais desnecessários;
+\item Registrar fonte e trecho para permitir correção e contestação;
+\item Usar segredos fortes e não versionar \texttt{.env} em repositório público;
+\item Executar contêineres com usuários não privilegiados em produção;
+\item Aplicar HTTPS e proxy reverso antes de exposição pública.
+\end{itemize}
+
+\section{Riscos de dados}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Risco}} & \textbf{\textbf{Mitigação}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Risco}} & \textbf{\textbf{Mitigação}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Prazo desatualizado & Indicador de recência e revisão periódica. \\
+Divergência entre páginas & Preservação de conflitos e múltiplas evidências. \\
+Evento falso ou irrelevante & Descoberta separada da publicação. \\
+Mudança de HTML & Extratores semânticos, testes e revisão manual. \\
+Sobrecarga do site de origem & Delay, throttling e baixa concorrência. \\
+\end{longtable}
+\end{center}

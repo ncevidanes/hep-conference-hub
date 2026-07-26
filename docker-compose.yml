@@ -1,0 +1,61 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: conference_hub
+      POSTGRES_USER: conference
+      POSTGRES_PASSWORD: conference
+    ports: ["5432:5432"]
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U conference -d conference_hub"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  api:
+    build: ./apps/api
+    environment:
+      DATABASE_URL: postgresql+psycopg://conference:conference@postgres:5432/conference_hub
+      REDIS_URL: redis://redis:6379/0
+      PUBLIC_BASE_URL: http://localhost:3000
+      NEWSLETTER_FROM_EMAIL: radar@example.org
+    ports: ["8000:8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  worker:
+    build: ./apps/api
+    command: celery -A app.tasks.celery_app:celery_app worker --loglevel=INFO
+    environment:
+      DATABASE_URL: postgresql+psycopg://conference:conference@postgres:5432/conference_hub
+      REDIS_URL: redis://redis:6379/0
+    depends_on: [api, redis]
+
+  beat:
+    build: ./apps/api
+    command: celery -A app.tasks.celery_app:celery_app beat --loglevel=INFO
+    environment:
+      DATABASE_URL: postgresql+psycopg://conference:conference@postgres:5432/conference_hub
+      REDIS_URL: redis://redis:6379/0
+    depends_on: [api, redis]
+
+  web:
+    build: ./apps/web
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+      INTERNAL_API_URL: http://api:8000/api/v1
+    ports: ["3000:3000"]
+    depends_on: [api]
+
+volumes:
+  postgres_data:

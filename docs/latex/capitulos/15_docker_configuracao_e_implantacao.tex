@@ -1,0 +1,40 @@
+\chapter{Docker, configuração e implantação}
+
+\section{Variáveis de ambiente}
+
+\begin{lstlisting}
+COMPOSE_PROJECT_NAME=hep-conference-hub
+DATABASE_URL=postgresql+psycopg://conference:conference@postgres:5432/conference_hub
+REDIS_URL=redis://redis:6379/0
+\end{lstlisting}
+
+\textbf{Regra importante: }dentro dos contêineres, os hosts são os nomes dos serviços (\texttt{postgres} e \texttt{redis}), não \texttt{localhost}.
+
+\section{Construção e subida}
+
+\begin{lstlisting}
+docker compose config -q
+docker compose up --build -d
+sleep 8
+docker compose ps
+curl http://localhost:8000/health
+\end{lstlisting}
+
+\section{Seed}
+
+\begin{lstlisting}
+docker compose exec api python -m app.seed
+\end{lstlisting}
+
+O seed deve ser idempotente: atualiza registros conhecidos e evita duplicações.
+
+\section{Preservação do banco}
+
+Durante atualizações de código, deve-se evitar \texttt{docker compose down -v}, pois essa opção remove volumes. O procedimento normal é reconstruir os serviços afetados e manter o volume PostgreSQL.
+
+\section{Reconstrução seletiva}
+
+\begin{lstlisting}
+docker compose build --no-cache api web
+docker compose up -d --force-recreate api web
+\end{lstlisting}

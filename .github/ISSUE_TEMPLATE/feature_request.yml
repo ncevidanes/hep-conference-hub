@@ -1,0 +1,21 @@
+name: Proposta de melhoria
+description: Sugira fonte, evento, recurso ou melhoria técnica.
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivação
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+    validations:
+      required: true
+  - type: input
+    id: official_source
+    attributes:
+      label: Fonte oficial relacionada

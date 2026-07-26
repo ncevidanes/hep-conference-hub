@@ -1,0 +1,64 @@
+\chapter{Requisitos funcionais e não funcionais}
+
+\section{Requisitos funcionais}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Código}} & \textbf{\textbf{Requisito}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Código}} & \textbf{\textbf{Requisito}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+RF-01 & Cadastrar e consultar eventos científicos com nome, sigla, datas, local, país, área e página oficial. \\
+RF-02 & Classificar automaticamente o estado temporal do evento. \\
+RF-03 & Representar múltiplas chamadas de submissão por evento. \\
+RF-04 & Representar diferentes fases de inscrição por evento. \\
+RF-05 & Oferecer filtros por texto, área, estado do evento, submissão, inscrição e região. \\
+RF-06 & Expor links específicos para atividades e materiais do evento. \\
+RF-07 & Coletar páginas internas e extrair datas e estados. \\
+RF-08 & Preservar conflitos entre fontes oficiais. \\
+RF-09 & Mostrar fonte, confiança e última verificação. \\
+RF-10 & Executar atualização periódica por fila de tarefas. \\
+RF-11 & Importar catálogo inicial de forma idempotente. \\
+RF-12 & Descobrir candidatos regionais sem publicação automática. \\
+\end{longtable}
+\end{center}
+
+\section{Requisitos não funcionais}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Código}} & \textbf{\textbf{Requisito}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Código}} & \textbf{\textbf{Requisito}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+RNF-01 & Executar por Docker Compose com serviços isolados. \\
+RNF-02 & Manter persistência PostgreSQL e fila Redis. \\
+RNF-03 & Respeitar robots.txt e limitar carga sobre domínios externos. \\
+RNF-04 & Ter testes unitários para regras temporais, extração, deduplicação, links e verificação. \\
+RNF-05 & Evitar invenção de prazos não encontrados. \\
+RNF-06 & Permitir ampliação para dezenas ou centenas de eventos sem limite fixo no modelo. \\
+RNF-07 & Separar responsabilidades entre API, interface, crawler, banco e tarefas. \\
+\end{longtable}
+\end{center}

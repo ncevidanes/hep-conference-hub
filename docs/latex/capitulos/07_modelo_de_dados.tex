@@ -1,0 +1,70 @@
+\chapter{Modelo de dados}
+
+O modelo foi evoluído para evitar a representação simplificada de “um evento com uma única data de submissão”. Cada dimensão temporal e cada evidência possuem entidade própria.
+
+\section{Event}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item Identidade: id, slug, nome, sigla e descrição;
+\item Tempo: início, fim e fuso horário;
+\item Localização: cidade, país e código do país;
+\item Classificação: área, tipo e estado temporal calculado;
+\item Origem: URL oficial e metadados de verificação;
+\item Relacionamentos: chamadas, inscrições e recursos.
+\end{itemize}
+
+\section{CallForPapers / chamadas}
+
+Representa uma chamada específica, por exemplo resumo oral, pôster, contribuição ou paper. O estado pode ser explícito mesmo sem uma data exata. Isso permite registrar “submissão encerrada” sem inventar o dia do encerramento.
+
+\section{RegistrationWindow}
+
+Representa fases independentes de inscrição: antecipada, regular, tardia, presencial ou formulário geral. Cada fase pode possuir data de abertura, prazo, estado e página própria.
+
+\section{EventResource}
+
+Representa links semânticos e auditáveis. Os papéis previstos incluem:
+
+\begin{lstlisting}
+submission
+registration
+programme
+timetable
+contributions
+proceedings
+important_dates
+authors
+payment
+other
+\end{lstlisting}
+
+\section{VerificationMixin}
+
+Entidades auditáveis compartilham campos como fonte, trecho de evidência, confiança, verificado e data da última verificação. Os níveis de confiança e recência são calculados para a resposta da API.
+
+\section{Estados independentes}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Dimensão}} & \textbf{\textbf{Estados principais}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Dimensão}} & \textbf{\textbf{Estados principais}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Evento & upcoming, ongoing, finished, cancelled, postponed, unknown \\
+Submissão & not\_announced, upcoming, open, extended, closed, unknown \\
+Inscrição & not\_announced, upcoming, open, closed, unknown \\
+Confiança & high, medium, low, unknown \\
+Recência & current, aging, stale, unknown \\
+\end{longtable}
+\end{center}

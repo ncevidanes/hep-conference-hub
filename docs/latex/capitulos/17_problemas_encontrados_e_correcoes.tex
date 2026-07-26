@@ -1,0 +1,40 @@
+\chapter{Problemas encontrados e correções}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.16\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.51\textwidth}}
+\toprule
+\textbf{\textbf{Problema}} & \textbf{\textbf{Causa}} & \textbf{\textbf{Correção consolidada}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Problema}} & \textbf{\textbf{Causa}} & \textbf{\textbf{Correção consolidada}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Conflitos de portas 3000/8000/6379 & Contêineres de projetos Compose antigos ainda ativos. & Identificar por porta, remover contêineres antigos e fixar COMPOSE\_PROJECT\_NAME. \\
+API não resolvia \texttt{postgres} & Rede Docker inconsistente. & Derrubar serviços, podar rede não utilizada, subir banco/Redis e depois API. \\
+Redis apontava para localhost & Variável inadequada para ambiente em contêiner. & Usar redis://redis:6379/0. \\
+Scrapy falhava em \texttt{\_setAcceptableProtocols} & Versões incompatíveis de Scrapy e Twisted. & Atualizar para Scrapy 2.17 e Twisted 26.x. \\
+Arquivo agregado inexistente & Crawler abortou antes da primeira requisição. & Corrigir dependências e executar novamente. \\
+Patch aplicado no diretório errado & Comando executado em apps/crawler em vez da raiz. & Executar patch em hep-conference-hub com -p1. \\
+Patch parcialmente aplicado & Árvore divergente gerou hunks rejeitados. & Restaurar pacote consolidado e validar ausência de \texttt{.rej}. \\
+Next.js: variável freshness ausente & Trecho de declaração rejeitado e trecho de uso aplicado. & Substituir a árvore pela versão consolidada da prioridade 5. \\
+\texttt{python} apontava para .venv removido & Terminal manteve PATH do ambiente antigo após troca da pasta. & Executar deactivate, hash -r e recriar .venv. \\
+rsync tentou copiar \texttt{/} & Variável SRC vazia. & Validar \texttt{test -n "\$SRC"} e presença do docker-compose antes da cópia. \\
+\end{longtable}
+\end{center}
+
+\section{Procedimento seguro para substituição da árvore}
+
+\begin{lstlisting}
+test -n "$SRC" || { echo "SRC vazia"; exit 1; }
+test -f "$SRC/docker-compose.yml" || exit 1
+test -d "$SRC/apps" || exit 1
+rsync -a --exclude='.env' --exclude='.venv' --exclude='node_modules' "$SRC/" ./hep-conference-hub/
+\end{lstlisting}

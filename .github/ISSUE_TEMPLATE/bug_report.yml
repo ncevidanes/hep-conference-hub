@@ -1,0 +1,28 @@
+name: Relato de erro
+description: Informe um erro reproduzível no portal, API ou crawler.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Explique o comportamento observado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como reproduzir
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs relevantes
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Versão
+      placeholder: v1.0.0

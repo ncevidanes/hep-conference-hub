@@ -1,0 +1,10 @@
+Content-Length: 1851
+Date: Sun, 26 Jul 2026 19:09:33 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+Cteonnt-Length: 3665
+Content-Type: text/calendar; charset=utf-8
+Content-Security-Policy: script-src 'self'; object-src 'self'
+Content-Disposition: inline; filename=event.ics
+Cache-Control: no-cache, private
+X-Indico-Url: /event/18/event.ics?detail=contributions
+Content-Encoding: gzip

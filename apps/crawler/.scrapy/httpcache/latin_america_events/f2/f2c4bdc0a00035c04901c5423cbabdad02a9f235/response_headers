@@ -1,0 +1,25 @@
+Content-Type: text/html; charset=UTF-8
+Link: <https://static.parastorage.com/>; rel=preconnect; crossorigin, <https://static.parastorage.com/>; rel=preconnect, <https://static.wixstatic.com/>; rel=preconnect; crossorigin, <https://static.wixstatic.com/>; rel=preconnect, <https://siteassets.parastorage.com>; rel=preconnect; crossorigin
+X-Wix-Request-Id: 1785092965.995109425911369
+Etag: W/"b6b66146904d910104448644ba0901eb"
+Content-Language: en
+Strict-Transport-Security: max-age=31556952
+Age: 0
+X-Cache-Status: MISS
+Set-Cookie: ssr-caching=cache#desc=miss#varnish=miss#dc#desc=virginia-phy_g; Max-Age=20; Expires=Sun, 26 Jul 2026 19:09:47 GMT
+Set-Cookie: XSRF-TOKEN=1785092967|d5dpVVqF5FPJ; Path=/; Domain=gammaconnection.ctao.org; Secure; SameSite=None
+Set-Cookie: sec-fetch-unsupported=1; Path=/; Secure; SameSite=Lax;
+Cache-Control: private,max-age=0,must-revalidate
+Server: Pepyaka
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Accept-Ranges: bytes
+Date: Sun, 26 Jul 2026 19:09:27 GMT
+X-Served-By: cache-gru-sbgr1930098-GRU
+X-Cache: MISS
+Vary: Accept-Encoding
+Server-Timing: cache;desc=miss, varnish;desc=miss_miss, dc;desc=fastly_virginia-phy_g
+X-Seen-By: yvSunuo/8ld62ehjr5B7kA==,pmHZlB45NPy7b1VBAukQrewfbs+7qUVAqsIx00yI78k=,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,Ua1iSBCTq7qSXjmRCGE1N0NS74yAf17+4H2xWMwH5wJ/Prga4NsubUBkMzpN9f9IqdB/muy8W4xVdZyKL0M+VGrMZjuPVrPjDsgbH6txUsgMIb4OgPCySNspBGZMYYFy,2d58ifebGbosy5xc+FRalm5qIFF6E5hsOeVgmA2tbbMcQb8mKEuxKBou6WHf82MGqdB/muy8W4xVdZyKL0M+VFOLdfJOXgWuoh6v0OSjnug=,2UNV7KOq4oGjA5+PKsX47O46TMzs8fDlsGfnVzqK07gFVd1lR1L8/yRoc88kq/ej,2UNV7KOq4oGjA5+PKsX47KEA/q0qujTnFdLk61L10h4FVd1lR1L8/yRoc88kq/ej,/B3VgDtICCNDWQOEWfZmMm0v6V+HyMmyT8ABvLWS3cU=,ywkbhDzHLtjhjmon1ohv9+xWh8ciYbQ5wkjBMk9Ry7kj6r0AZAMucqm4C7kwBEya6pu/tFvgTUX4OSwBluOBEw==,/B3VgDtICCNDWQOEWfZmMnOloRjQzq7N28XEzUrDi/4=,LoUK8/saGAmOxZWtpubo2lzqEfGiY9+uOXu3BnYRIr96dUjrdFhwfdGkSzhBAEnF8eFa0BHgWyC3JYHZFe+523ivmqAfH/8kf3b23B/Vfj4=,/B3VgDtICCNDWQOEWfZmMnOloRjQzq7N28XEzUrDi/4=,/a5ccLSK1HEmwPNg/x6OupL4Tkh4o7115SeW3tZVTpFbBXDQQ/23pTmz1KIXNZ6+lcT7HVKLqghdwVccyC7oiyx6T9/svKHSjygx2Qg5gI8=
+Via: 1.1 google
+Glb-X-Seen-By: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000

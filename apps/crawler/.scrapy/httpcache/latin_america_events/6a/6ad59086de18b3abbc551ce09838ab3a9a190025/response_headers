@@ -1,0 +1,8 @@
+Date: Sun, 26 Jul 2026 19:09:41 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+Cteonnt-Length: 3319636
+Content-Type: application/pdf
+Content-Security-Policy: script-src 'self'; object-src 'self'
+Content-Disposition: inline; filename=program.pdf
+Cache-Control: no-cache, private
+X-Indico-Url: /event/18/program.pdf

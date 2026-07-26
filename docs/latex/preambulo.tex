@@ -1,0 +1,70 @@
+% Configuração tipográfica e pacotes do relatório
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{lastpage}
+
+\definecolor{codebackground}{RGB}{247,248,250}
+\definecolor{codeframe}{RGB}{205,210,218}
+\definecolor{linkblue}{RGB}{22,77,128}
+
+\lstdefinestyle{portalcode}{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{codebackground},
+  frame=single,
+  rulecolor=\color{codeframe},
+  breaklines=true,
+  breakatwhitespace=false,
+  keepspaces=true,
+  showstringspaces=false,
+  columns=fullflexible,
+  tabsize=2,
+  xleftmargin=0.5em,
+  xrightmargin=0.5em,
+  aboveskip=0.8em,
+  belowskip=0.8em,
+  literate=
+    {á}{{\'a}}1 {à}{{\`a}}1 {ã}{{\~a}}1 {â}{{\^a}}1
+    {Á}{{\'A}}1 {À}{{\`A}}1 {Ã}{{\~A}}1 {Â}{{\^A}}1
+    {é}{{\'e}}1 {ê}{{\^e}}1 {É}{{\'E}}1 {Ê}{{\^E}}1
+    {í}{{\'i}}1 {Í}{{\'I}}1
+    {ó}{{\'o}}1 {õ}{{\~o}}1 {ô}{{\^o}}1
+    {Ó}{{\'O}}1 {Õ}{{\~O}}1 {Ô}{{\^O}}1
+    {ú}{{\'u}}1 {Ú}{{\'U}}1
+    {ç}{{\c c}}1 {Ç}{{\c C}}1
+    {–}{{--}}1 {—}{{--}}1 {·}{{*}}1
+}
+\lstset{style=portalcode}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  urlcolor=linkblue,
+  citecolor=linkblue,
+  pdftitle={Documentação técnica do HEP Conference Hub},
+  pdfauthor={Nelson Cevidanes Nascimento de Assis},
+  pdfsubject={Arquitetura, implementação, coleta, auditoria e implantação do portal},
+  pdfkeywords={HEP, conferências, FastAPI, Next.js, Scrapy, PostgreSQL, Celery, América Latina}
+}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.15cm}
+\OnehalfSpacing
+\setlist[itemize]{topsep=0.35em}
+\setlist[enumerate]{topsep=0.35em}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTpre}{0.7em}
+\setlength{\LTpost}{0.7em}
+\emergencystretch=3em

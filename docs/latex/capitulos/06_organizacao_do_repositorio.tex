@@ -1,0 +1,70 @@
+\chapter{Organização do repositório}
+
+\begin{lstlisting}
+hep-conference-hub/
+|-- README.md
+|-- Makefile
+|-- docker-compose.yml
+|-- .env
+|-- apps/
+|   |-- api/
+|   |   |-- Dockerfile
+|   |   |-- requirements.txt
+|   |   `-- app/
+|   |       |-- api/
+|   |       |-- core/
+|   |       |-- data/
+|   |       |-- db/
+|   |       |-- models/
+|   |       |-- schemas/
+|   |       |-- services/
+|   |       |-- tasks/
+|   |       |-- main.py
+|   |       `-- seed.py
+|   |-- web/
+|   |   |-- app/
+|   |   |-- components/
+|   |   |-- Dockerfile
+|   |   `-- package.json
+|   `-- crawler/
+|       |-- conference_crawler/
+|       |   |-- extractors/
+|       |   |-- pipelines/
+|       |   `-- spiders/
+|       |-- requirements.txt
+|       `-- output/
+|-- infra/
+`-- tests/
+\end{lstlisting}
+
+\section{Responsabilidades por diretório}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Diretório}} & \textbf{\textbf{Responsabilidade}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Diretório}} & \textbf{\textbf{Responsabilidade}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+apps/api/app/models & Entidades SQLAlchemy e relacionamentos. \\
+apps/api/app/schemas & Contratos Pydantic expostos pela API. \\
+apps/api/app/api & Rotas públicas e administrativas. \\
+apps/api/app/services & Regras reutilizáveis, incluindo confiança e recência. \\
+apps/api/app/data & Catálogos estruturados, como a expansão latino-americana. \\
+apps/web/components & Componentes de interface, especialmente EventCard. \\
+apps/crawler/.../extractors & Descoberta de páginas, datas, oportunidades e links. \\
+apps/crawler/.../pipelines & Agregação, deduplicação e geração das saídas. \\
+apps/crawler/.../spiders & Spiders específicos, genéricos e regionais. \\
+tests & Testes unitários das regras e dos extratores. \\
+\end{longtable}
+\end{center}

@@ -1,0 +1,17 @@
+Date: Sun, 26 Jul 2026 19:09:21 GMT
+Content-Type: text/plain; charset=utf-8
+Set-Cookie: __cf_bm=lmGjEWHnHb9HMh_f3n0STIk_nsaC6qd6lUsiGe6npN0-1785092961.0817645-1.0.1.1-hbfhrjQDyZYnTxunq.yeEJ9S7PbgUuLvj7Oi4XItWbk8ur9VopptLto3zrCzuQy9KUY2qWWr7YV23BT5GzxgULpeNE5J6oR3azVSgVkNwyFJlvwVqcFIQMcMARN3BCNf; HttpOnly; SameSite=None; Secure; Path=/; Domain=diegomarquesdm4.wixsite.com; Expires=Sun, 26 Jul 2026 19:39:21 GMT
+X-Wix-Cache-Control: public, max-age=604800
+Etag: W/"1bb-vSHNsUa7VWyA63DVja2Ytd/v8ts"
+Age: 0
+X-Cache-Status: MISS
+X-Seen-By: bQAXdg/f3pWGCb3VI6q72A==,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,Ua1iSBCTq7qSXjmRCGE1NwNMBSPEq2V5yvKLTWlRs1wlDvuzYT4eXeDjHigm2DrbqdB/muy8W4xVdZyKL0M+VGrMZjuPVrPjDsgbH6txUshqHHIAKTqLgWFBHwHGr+7k,2d58ifebGbosy5xc+FRalmOohYgrs6wwrNq9vtgWSQZyOltwOOFZkaGkTx/q/F4CqdB/muy8W4xVdZyKL0M+VB+QmoTduQy303KBw2INeI0=,2UNV7KOq4oGjA5+PKsX47G86grxW7YVbTxNaQeYTCEMFVd1lR1L8/yRoc88kq/ej,/B3VgDtICCNDWQOEWfZmMm0v6V+HyMmyT8ABvLWS3cU=,o6VOeTbMKY7U4brBSq2ArVt07U8e8Lx5xSl9d5HsadGBqO2TFADSiaZf+Q2q6p9+CgmAu/9IvfjTXU5t9yX6LZErHe72RaXnzYmgPs8GdnU=
+Cache-Control: private, max-age=0, must-revalidate
+X-Wix-Request-Id: 1785092961.150159597411371
+Server-Timing: cache;desc=miss, varnish;desc=miss, dc;desc=virginia-phy_cf
+Server: cloudflare
+X-Content-Type-Options: nosniff
+Cf-Cache-Status: DYNAMIC
+Content-Encoding: gzip
+Cf-Ray: a215b2bebdbfcada-GIG
+Alt-Svc: h3=":443"; ma=86400

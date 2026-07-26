@@ -1,0 +1,33 @@
+\chapter{Referência rápida de comandos}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Objetivo}} & \textbf{\textbf{Comando}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Objetivo}} & \textbf{\textbf{Comando}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Ver serviços & docker compose ps \\
+Ver saúde & curl http://localhost:8000/health \\
+Executar seed & docker compose exec api python -m app.seed \\
+Executar testes & docker compose run --rm --no-deps ... python -m unittest discover ... \\
+Listar spiders & python -m scrapy list \\
+Coletar América Latina & python -m scrapy crawl latin\_america\_events \\
+Descobrir candidatos & python -m scrapy crawl latin\_america\_discovery \\
+Ver logs da API & docker compose logs api --tail=100 \\
+Recriar frontend & docker compose build --no-cache web \\
+Abrir portal & http://localhost:3000 \\
+\end{longtable}
+\end{center}
+
+\textbf{Fim da documentação técnica — versão 1.0}

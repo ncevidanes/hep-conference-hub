@@ -1,0 +1,7 @@
+Content-Length: 251
+Server: nginx/1.20.1
+Date: Sun, 26 Jul 2026 19:10:10 GMT
+Content-Type: text/html; charset=utf-8
+Location: /event/15349/registrations/3838/
+Content-Security-Policy: script-src 'self' 'unsafe-eval'; base-uri 'self'
+X-Indico-Url: /event/15349/registrations/

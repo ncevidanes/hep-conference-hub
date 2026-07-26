@@ -1,0 +1,20 @@
+Content-Type: text/plain; charset=utf-8
+Etag: W/"1f2-RuR2KNddGp/HE1g4I4luO241RQc"
+X-Cache-Status: HIT
+X-Wix-Request-Id: 1785092961.134187062121370
+Cache-Control: public,max-age=0,must-revalidate
+Server: Pepyaka
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Accept-Ranges: bytes
+Age: 57547
+Date: Sun, 26 Jul 2026 19:09:21 GMT
+X-Served-By: cache-gru-sbgr1930055-GRU
+X-Cache: MISS
+Vary: Accept-Encoding
+Server-Timing: cache;desc=hit, varnish;desc=hit_miss, dc;desc=fastly_virginia-phy_g
+Strict-Transport-Security: max-age=31556952
+X-Seen-By: yvSunuo/8ld62ehjr5B7kA==,VtqAe8Wu9wvSsl49B/X4+ewfbs+7qUVAqsIx00yI78k=,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,Ua1iSBCTq7qSXjmRCGE1N9YARKpNnjKLek8n6yKg04XwdQ0xgDa3FW8+rrtpokrEqdB/muy8W4xVdZyKL0M+VGrMZjuPVrPjDsgbH6txUshM1fdSTj9oO0l1bsoixzMH,2d58ifebGbosy5xc+FRalvfq9k5X+loZAE5DZplgjq0Wz8K3lWQqR29zXjB3Eut+qdB/muy8W4xVdZyKL0M+VJZR0BGfxrM7CiMFzjnXzTs=,2UNV7KOq4oGjA5+PKsX47FtSaLg8IYZ7tWb3E4MS5QwFVd1lR1L8/yRoc88kq/ej,2UNV7KOq4oGjA5+PKsX47G86grxW7YVbTxNaQeYTCEMFVd1lR1L8/yRoc88kq/ej
+Via: 1.1 google
+Glb-X-Seen-By: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=
+Alt-Svc: h3=":443"; ma=2592000

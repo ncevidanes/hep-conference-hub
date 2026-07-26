@@ -1,0 +1,9 @@
+Content-Length: 650
+Server: nginx/1.20.1
+Date: Sun, 26 Jul 2026 19:09:31 GMT
+Content-Type: text/plain
+Last-Modified: Thu, 23 Jul 2026 14:09:20 GMT
+Etag: "6a622090-28a"
+Accept-Ranges: bytes
+Set-Cookie: indico-worker=indico-global-wk2; path=/; HttpOnly
+Cache-Control: private

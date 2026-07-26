@@ -1,0 +1,66 @@
+\chapter{Auditoria, confiança e rastreabilidade}
+
+A prioridade 5 tornou visível a origem de cada informação. O sistema calcula classificações, mas preserva os dados brutos usados na decisão.
+
+\section{Confiança}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Faixa}} & \textbf{\textbf{Classificação}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Faixa}} & \textbf{\textbf{Classificação}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+0,90 a 1,00 & Alta \\
+0,70 a 0,89 & Média \\
+Abaixo de 0,70 & Baixa \\
+Sem pontuação & Desconhecida \\
+\end{longtable}
+\end{center}
+
+\section{Recência}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Idade da verificação}} & \textbf{\textbf{Classificação}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Idade da verificação}} & \textbf{\textbf{Classificação}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Até 7 dias & Recente / current \\
+8 a 30 dias & Rever em breve / aging \\
+Mais de 30 dias & Desatualizada / stale \\
+Sem data & Desconhecida / unknown \\
+\end{longtable}
+\end{center}
+
+\section{Evidência mínima}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item URL da fonte;
+\item trecho de texto relevante;
+\item função da página;
+\item data e hora da última verificação;
+\item pontuação e nível de confiança;
+\item estado de verificação e possíveis conflitos.
+\end{itemize}

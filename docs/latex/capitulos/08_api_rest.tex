@@ -1,0 +1,69 @@
+\chapter{API REST}
+
+A API FastAPI expõe o catálogo em JSON e permite filtros combináveis. A documentação interativa normalmente fica disponível em \texttt{/docs}.
+
+\section{Endpoints principais}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Método e rota}} & \textbf{\textbf{Finalidade}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Método e rota}} & \textbf{\textbf{Finalidade}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+GET /health & Verificação de saúde da API. \\
+GET /api/v1/events & Listagem paginada com filtros. \\
+GET /api/v1/events/\{slug\} & Detalhamento de um evento. \\
+GET /api/v1/admin/... & Indicadores administrativos e revisão. \\
+\end{longtable}
+\end{center}
+
+\section{Filtros de consulta}
+
+\begin{lstlisting}
+q=<texto>
+event_status=upcoming|ongoing|finished|active|all
+submission_status=open|closed|unknown|all
+registration_status=open|closed|unknown|all
+area=<categoria>
+region=latin-america|other|unknown
+include_finished=true|false
+limit=<número>
+offset=<número>
+\end{lstlisting}
+
+\section{Exemplo de consulta regional}
+
+\begin{lstlisting}
+curl -s \
+  'http://localhost:8000/api/v1/events?region=latin-america&include_finished=true&limit=30' | \
+  docker compose exec -T api python -m json.tool
+\end{lstlisting}
+
+\section{Estrutura resumida da resposta}
+
+\begin{lstlisting}
+{
+  "slug": "ichep-2026",
+  "acronym": "ICHEP 2026",
+  "event_status": "upcoming",
+  "region": "latin-america",
+  "calls": [...],
+  "registrations": [...],
+  "resources": [...],
+  "confidence_score": 0.95,
+  "confidence_level": "high",
+  "verification_freshness": "current",
+  "last_verified_at": "2026-07-26T..."
+}
+\end{lstlisting}

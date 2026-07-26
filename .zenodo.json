@@ -1,0 +1,33 @@
+{
+  "title": "HEP Conference Hub: An Auditable Portal for Discovering and Monitoring High-Energy Physics Events",
+  "description": "<p>HEP Conference Hub is an auditable web portal for discovering and monitoring conferences, symposia, workshops and schools in high-energy physics. The platform separates event, abstract-submission and registration status; preserves official source URLs, evidence excerpts, confidence and verification timestamps; and includes regional discovery focused on Latin America.</p><p>The software combines FastAPI, PostgreSQL, Next.js, Scrapy, Celery, Redis and Docker Compose.</p>",
+  "creators": [
+    {
+      "name": "Assis, Nelson Cevidanes Nascimento de"
+    }
+  ],
+  "keywords": [
+    "high-energy physics",
+    "particle physics",
+    "scientific events",
+    "conference discovery",
+    "CERN",
+    "LHC",
+    "Latin America",
+    "FastAPI",
+    "Next.js",
+    "Scrapy"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "1.0.0",
+  "publication_date": "2026-07-26",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ncevidanes/hep-conference-hub",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

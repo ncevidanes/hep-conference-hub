@@ -1,0 +1,40 @@
+\chapter{Tecnologias utilizadas}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.16\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.51\textwidth}}
+\toprule
+\textbf{\textbf{Camada}} & \textbf{\textbf{Tecnologia}} & \textbf{\textbf{Finalidade}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Camada}} & \textbf{\textbf{Tecnologia}} & \textbf{\textbf{Finalidade}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Frontend & Next.js 15 + React + TypeScript & Renderização, formulários de busca, cartões e navegação. \\
+Backend & FastAPI + Pydantic & API REST, validação de schemas e documentação automática. \\
+Persistência & PostgreSQL 16 + SQLAlchemy & Modelo relacional, consultas e relacionamentos. \\
+Fila & Redis 7 + Celery & Tarefas assíncronas e agendamento periódico. \\
+Crawler & Scrapy 2.17 + Twisted 26.x & Navegação, respeito a robots.txt, throttling e pipelines. \\
+Infraestrutura & Docker + Docker Compose & Ambiente reprodutível e isolamento de serviços. \\
+Testes & unittest & Validação de regras de domínio e extratores. \\
+Automação local & Makefile e scripts shell & Atalhos para build, seed, testes e crawling. \\
+\end{longtable}
+\end{center}
+
+\section{Compatibilidade Scrapy/Twisted}
+
+Durante a implementação, a combinação Scrapy 2.13.3 com Twisted 26.4.0 falhou ao importar uma API interna. A configuração consolidada passou a usar:
+
+\begin{lstlisting}
+scrapy==2.17.0
+Twisted>=26.4.0,<27
+itemadapter==0.11.0
+python-dateutil==2.9.0.post0
+\end{lstlisting}

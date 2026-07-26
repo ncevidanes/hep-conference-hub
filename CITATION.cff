@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Se utilizar este software, cite-o conforme indicado abaixo."
+title: "HEP Conference Hub: An Auditable Portal for Discovering and Monitoring High-Energy Physics Events"
+type: software
+authors:
+  - family-names: "de Assis"
+    given-names: "Nelson Cevidanes Nascimento"
+    # Acrescente o ORCID antes da release, caso possua:
+    # orcid: "https://orcid.org/0000-0003-3453-4767"
+repository-code: "https://github.com/ncevidanes/hep-conference-hub"
+url: "https://github.com/ncevidanes/hep-conference-hub"
+version: "1.0.0"
+date-released: "2026-07-26"
+license: MIT
+keywords:
+  - high-energy physics
+  - particle physics
+  - scientific events
+  - conference discovery
+  - CERN
+  - LHC
+  - Latin America
+  - FastAPI
+  - Next.js
+  - Scrapy
+abstract: >-
+  HEP Conference Hub is an auditable web portal for discovering and monitoring
+  conferences, symposia, workshops and schools in high-energy physics. It
+  separates event, submission and registration status and preserves source,
+  evidence excerpt, confidence and verification time.

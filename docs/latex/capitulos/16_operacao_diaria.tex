@@ -1,0 +1,45 @@
+\chapter{Operação diária}
+
+\section{Verificação de serviços}
+
+\begin{lstlisting}
+docker compose ps
+docker compose logs api --tail=100
+docker compose logs worker --tail=100
+docker compose logs beat --tail=100
+curl http://localhost:8000/health
+\end{lstlisting}
+
+\section{Consulta de eventos latino-americanos}
+
+\begin{lstlisting}
+curl -s \
+  'http://localhost:8000/api/v1/events?region=latin-america&include_finished=true&limit=30' | \
+  docker compose exec -T api python -c '
+import json, sys
+payload = json.load(sys.stdin)
+print("Total:", payload["total"])
+for event in payload["items"]:
+    print(event["event_status"], event.get("acronym"), event.get("city"))
+'
+\end{lstlisting}
+
+\section{Ambiente local do crawler}
+
+\begin{lstlisting}
+cd apps/crawler
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m scrapy list
+\end{lstlisting}
+
+\section{Coleta regional}
+
+\begin{lstlisting}
+python -m scrapy crawl latin_america_events
+python -m scrapy crawl latin_america_discovery
+python -m json.tool output/latin_america/events_aggregated.json
+python -m json.tool --json-lines output/latin_america_candidates.jsonl
+\end{lstlisting}

@@ -1,0 +1,29 @@
+\chapter{Limitações atuais e roadmap}
+
+\section{Limitações}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item O catálogo ainda depende de seeds e spiders específicos para vários eventos;
+\item Mudanças de HTML podem exigir atualização de extratores;
+\item O crawler local exige ambiente virtual próprio quando executado fora do Docker;
+\item A migração de schema ainda se apoia em criação automática para parte das mudanças; produção deve adotar Alembic;
+\item A autenticação administrativa e o fluxo editorial ainda precisam ser fortalecidos;
+\item A prioridade 6 — arquivo histórico pesquisável — não foi concluída na versão documentada.
+\end{itemize}
+
+\section{Prioridade 6}
+
+A etapa seguinte deve retirar eventos concluídos do radar de oportunidades e criar um arquivo histórico pesquisável. O histórico deverá manter programa, contribuições, apresentações, proceedings e evidências, além de permitir filtros por ano, país, área e tipo de evento.
+
+\section{Melhorias recomendadas}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.25em]
+\item Introduzir Alembic para migrações versionadas;
+\item Criar painel editorial com aprovação, rejeição e resolução de conflitos;
+\item Automatizar importação do JSON agregado para a API com transação e auditoria;
+\item Adicionar testes de integração e testes ponta a ponta com Playwright;
+\item Configurar proxy reverso, HTTPS, monitoramento e backups;
+\item Criar newsletter e alertas personalizados por área, país e prazo;
+\item Implementar deduplicação probabilística para eventos encontrados em fontes diferentes;
+\item Ampliar fontes para outras regiões e colaborações científicas.
+\end{enumerate}

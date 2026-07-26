@@ -1,0 +1,5 @@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: HEPConferenceHubBot/0.1 (+contact@example.org)
+Accept-Encoding: gzip, deflate
+Cookie: PHPSESSID=6d9810ac6e610b22f3ae0c64d8397647

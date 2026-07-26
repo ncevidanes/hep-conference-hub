@@ -1,0 +1,30 @@
+\chapter*{Controle do documento}
+\addcontentsline{toc}{chapter}{Controle do documento}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Item}} & \textbf{\textbf{Descrição}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Item}} & \textbf{\textbf{Descrição}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Título & Documentação técnica do HEP Conference Hub \\
+Versão & 1.0 \\
+Data de referência & 26/07/2026 \\
+Estado funcional & Portal em execução com API, frontend, banco, fila, crawler e catálogo latino-americano \\
+Escopo coberto & Prioridades 1–5, expansão regional e procedimentos operacionais \\
+Pendência estrutural & Prioridade 6: arquivo histórico pesquisável de eventos concluídos \\
+\end{longtable}
+\end{center}
+
+\textbf{Nota de rastreabilidade. }Este documento consolida a arquitetura, as decisões e os procedimentos efetivamente desenvolvidos durante a implementação. Alguns detalhes operacionais podem variar conforme novas alterações no repositório; os comandos de validação apresentados devem ser usados para confirmar o estado real da instalação.

@@ -1,0 +1,5 @@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: HEPConferenceHubBot/0.1 (+contact@example.org)
+Accept-Encoding: gzip, deflate
+Referer: https://indico.cta-observatory.org/event/7332/timetable?view=standard

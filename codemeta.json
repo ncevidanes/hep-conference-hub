@@ -1,0 +1,43 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "HEP Conference Hub",
+  "alternateName": "HEP Conference Hub: portal auditável para descoberta e monitoramento de eventos de física de altas energias",
+  "description": "Portal auditável para descoberta e monitoramento de eventos de física de altas energias.",
+  "version": "1.0.0",
+  "datePublished": "2026-07-26",
+  "codeRepository": "https://github.com/ncevidanes/hep-conference-hub",
+  "issueTracker": "https://github.com/ncevidanes/hep-conference-hub/issues",
+  "license": "https://spdx.org/licenses/MIT",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Nelson Cevidanes Nascimento",
+      "familyName": "de Assis"
+    }
+  ],
+  "programmingLanguage": [
+    "Python",
+    "TypeScript",
+    "SQL",
+    "Shell"
+  ],
+  "runtimePlatform": [
+    "Docker",
+    "Python 3.12",
+    "Node.js 22"
+  ],
+  "keywords": [
+    "high-energy physics",
+    "particle physics",
+    "scientific events",
+    "conference discovery",
+    "CERN",
+    "LHC",
+    "Latin America",
+    "FastAPI",
+    "Next.js",
+    "Scrapy"
+  ],
+  "applicationCategory": "Scientific event discovery and monitoring"
+}

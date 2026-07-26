@@ -1,0 +1,62 @@
+\chapter{Crawler e extração de informações}
+
+O crawler foi construído em Scrapy com extratores especializados. O objetivo não é simplesmente copiar texto, mas produzir observações estruturadas, auditáveis e vinculadas à página exata.
+
+\section{Configurações responsáveis}
+
+\begin{lstlisting}
+ROBOTSTXT_OBEY = True
+AUTOTHROTTLE_ENABLED = True
+CONCURRENT_REQUESTS_PER_DOMAIN = 2
+DOWNLOAD_DELAY = 1.5
+DEPTH_LIMIT = 2
+USER_AGENT = "HEPConferenceHubBot/0.1 (+contato-do-projeto)"
+\end{lstlisting}
+
+\section{Descoberta semântica de páginas}
+
+O módulo \texttt{page\_discovery.py} classifica links por função. Exemplos: chamada de resumos, datas importantes, inscrição, autores, programa, proceedings e newsletter. A navegação permanece restrita ao domínio oficial ou ao prefixo confiável do evento em uma plataforma Indico.
+
+\section{Extração de prazos}
+
+O extrator identifica candidatos rotulados, preservando tipo, data, horário, fuso, estado, URL, trecho e confiança. Datas sem rótulo suficiente são ignoradas para evitar falsos positivos.
+
+\section{Conflitos}
+
+Quando páginas oficiais divergem, os valores são mantidos como evidências conflitantes. O sistema não escolhe silenciosamente uma data. Esse comportamento foi usado em casos como diferenças entre “Important Dates” e formulários Indico.
+
+\section{Spiders}
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.64\textwidth}}
+\toprule
+\textbf{\textbf{Spider}} & \textbf{\textbf{Finalidade}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{\textbf{Spider}} & \textbf{\textbf{Finalidade}} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\footnotesize Continua na próxima página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+ichep\_2026 & Coleta específica do ICHEP e páginas internas. \\
+event\_site & Coletor genérico parametrizado por URL e identificador. \\
+latin\_america\_events & Percorre o catálogo regional verificado. \\
+latin\_america\_discovery & Descobre candidatos em fontes regionais, sem publicação automática. \\
+\end{longtable}
+\end{center}
+
+\section{Saídas}
+
+\begin{lstlisting}
+output/pages.jsonl
+output/events_aggregated.json
+output/latin_america_pages.jsonl
+output/latin_america/events_aggregated.json
+output/latin_america_candidates.jsonl
+\end{lstlisting}

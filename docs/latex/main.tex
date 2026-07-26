@@ -1,0 +1,75 @@
+\documentclass[
+  12pt,
+  oneside,
+  a4paper,
+  chapter=TITLE,
+  section=TITLE,
+  brazil
+]{abntex2}
+
+\input{preambulo.tex}
+
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing
+
+\begin{titlingpage}
+\centering
+\vspace*{1.5cm}
+{\Large\bfseries HEP CONFERENCE HUB\par}
+\vspace{1.1cm}
+{\huge\bfseries Documentação técnica completa do portal\par}
+\vspace{0.45cm}
+{\Large Congressos, workshops e escolas em Física de Altas Energias\par}
+\vspace{1.2cm}
+\rule{0.82\textwidth}{0.6pt}\par
+\vspace{0.8cm}
+{\large Arquitetura, implementação, coleta de dados, auditoria, implantação e expansão para a América Latina\par}
+\vfill
+\begin{flushleft}
+\textbf{Responsável pelo projeto:} Nelson Cevidanes Nascimento de Assis\\[0.35cm]
+\textbf{Versão documentada:} prioridades 1 a 5 e expansão latino-americana\\[0.35cm]
+\textbf{Data de referência:} 26 de julho de 2026
+\end{flushleft}
+\vspace{1.2cm}
+{\large 2026\par}
+\end{titlingpage}
+
+\pretextual
+\input{capitulos/00_controle_documento.tex}
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+\listoffigures*
+\cleardoublepage
+
+\textual
+\input{capitulos/01_visao_geral_e_objetivos.tex}
+\input{capitulos/02_evolucao_da_implementacao_por_prioridades.tex}
+\input{capitulos/03_requisitos_funcionais_e_nao_funcionais.tex}
+\input{capitulos/04_arquitetura_do_sistema.tex}
+\input{capitulos/05_tecnologias_utilizadas.tex}
+\input{capitulos/06_organizacao_do_repositorio.tex}
+\input{capitulos/07_modelo_de_dados.tex}
+\input{capitulos/08_api_rest.tex}
+\input{capitulos/09_frontend_web.tex}
+\input{capitulos/10_crawler_e_extracao_de_informacoes.tex}
+\input{capitulos/11_processamento_assincrono.tex}
+\input{capitulos/12_catalogo_e_expansao_para_a_america_latina.tex}
+\input{capitulos/13_auditoria_confianca_e_rastreabilidade.tex}
+\input{capitulos/14_testes_e_garantia_da_qualidade.tex}
+\input{capitulos/15_docker_configuracao_e_implantacao.tex}
+\input{capitulos/16_operacao_diaria.tex}
+\input{capitulos/17_problemas_encontrados_e_correcoes.tex}
+\input{capitulos/18_seguranca_etica_e_conformidade.tex}
+\input{capitulos/19_limitacoes_atuais_e_roadmap.tex}
+
+\postextual
+\appendix
+\partapendices
+\input{apendices/01_sequencia_de_instalacao_limpa.tex}
+\input{apendices/02_checklist_de_release.tex}
+\input{apendices/03_glossario.tex}
+\input{apendices/04_referencia_rapida_de_comandos.tex}
+
+\end{document}

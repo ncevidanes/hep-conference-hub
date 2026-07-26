@@ -1,0 +1,23 @@
+Date: Sun, 26 Jul 2026 19:09:26 GMT
+Content-Type: text/html; charset=UTF-8
+Link: <https://static.parastorage.com/>; rel=preconnect; crossorigin;,<https://static.parastorage.com/>; rel=preconnect;,<https://static.wixstatic.com/>; rel=preconnect; crossorigin;,<https://static.wixstatic.com/>; rel=preconnect;,<https://siteassets.parastorage.com>; rel=preconnect; crossorigin;,
+Etag: W/"c0adff159df49f362ca7164831d40d00"
+X-Meta-Site-Id: 07961b9b-e32a-47e8-a7fc-722a9ed3a6b8
+Content-Language: es-419
+Strict-Transport-Security: max-age=31556952
+Age: 171845
+X-Cache-Status: HIT
+Set-Cookie: ssr-caching=cache#desc=hit#varnish=hit#dc#desc=virginia-pub; Max-Age=20; Expires=Fri, 24 Jul 2026 19:25:40 GMT
+Set-Cookie: sec-fetch-unsupported=1; Path=/; Secure; SameSite=Lax
+Set-Cookie: XSRF-TOKEN=1785092966|id-aqcTKMJ58; Path=/; Domain=diegomarquesdm4.wixsite.com; Secure; SameSite=None
+X-Seen-By: bQAXdg/f3pWGCb3VI6q72A==,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,Ua1iSBCTq7qSXjmRCGE1Nwc5kAkTFu62emG8GoVQOuEvVt+1/kxNidh4xyN7Y2LQqdB/muy8W4xVdZyKL0M+VGrMZjuPVrPjDsgbH6txUsg2Et6tgPUoxYghmKD/W82J,2d58ifebGbosy5xc+FRalsuqga+nBaMZhwaio88bHZSvbVQfJY1LA9I5PHQ59sPGhGNbcQiSFAd+RNSacbuoJw==,2UNV7KOq4oGjA5+PKsX47M7S1LBvjFf6plYtj52u9Owxwy5Yb789UDkEfaJNWrtQ
+Vary: Accept-Encoding
+X-Wix-Request-Id: 1785092966.267134959411369
+Server-Timing: cache;desc=hit, varnish;desc=hit, dc;desc=virginia-pub_cf
+Cache-Control: private,max-age=0,must-revalidate
+Server: cloudflare
+X-Content-Type-Options: nosniff
+Cf-Cache-Status: DYNAMIC
+Content-Encoding: gzip
+Cf-Ray: a215b2dec85bcada-GIG
+Alt-Svc: h3=":443"; ma=86400

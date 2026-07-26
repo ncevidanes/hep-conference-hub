@@ -1,0 +1,10 @@
+Content-Length: 10539
+Server: openresty
+Date: Sun, 26 Jul 2026 19:09:35 GMT
+Content-Type: text/html; charset=UTF-8
+Link: <https://rpc2026.uerj.br/wp-json/>; rel="https://api.w.org/", <https://rpc2026.uerj.br/wp-json/wp/v2/pages/3493>; rel="alternate"; title="JSON"; type="application/json", <https://rpc2026.uerj.br/?p=3493>; rel=shortlink
+X-Litespeed-Cache-Control: public,max-age=604800
+X-Litespeed-Tag: 5e8_page,5e8_URL.d98c65aa8b0d2b5881b3b8617d3d369e,5e8_Po.3493,5e8_PGS,5e8_
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=31536000
