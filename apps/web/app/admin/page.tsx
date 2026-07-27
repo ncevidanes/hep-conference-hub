@@ -1,5 +1,7 @@
+import { getServerApiBase } from '../../lib/api';
+
 async function summary() {
-  const base = process.env.INTERNAL_API_URL || 'http://api:8000/api/v1';
+  const base = getServerApiBase();
   try {
     return await (await fetch(`${base}/admin/summary`, { cache: 'no-store' })).json();
   } catch {

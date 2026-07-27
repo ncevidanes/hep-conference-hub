@@ -1,5 +1,6 @@
 import EventCard from '../components/EventCard';
 import Newsletter from '../components/Newsletter';
+import { getServerApiBase } from '../lib/api';
 
 type SearchParams = Promise<{
   q?: string;
@@ -18,7 +19,7 @@ async function getEvents(params: {
   region?: string;
   event_status?: string;
 }) {
-  const base = process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const base = getServerApiBase();
   const query = new URLSearchParams({ limit: '30' });
 
   if (params.q?.trim()) query.set('q', params.q.trim());

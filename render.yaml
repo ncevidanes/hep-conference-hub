@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: hep-conference-hub-api-ncevidanes
+    runtime: docker
+    plan: free
+    rootDir: apps/api
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: hep-conference-hub-db-ncevidanes
+          property: connectionString
+      - key: NEWSLETTER_FROM_EMAIL
+        value: radar@example.org
+      - key: SEED_ON_STARTUP
+        value: "true"
+
+  - type: web
+    name: hep-conference-hub-web-ncevidanes
+    runtime: docker
+    plan: free
+    rootDir: apps/web
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: API_EXTERNAL_URL
+        fromService:
+          type: web
+          name: hep-conference-hub-api-ncevidanes
+          envVarKey: RENDER_EXTERNAL_URL
+
+databases:
+  - name: hep-conference-hub-db-ncevidanes
+    plan: free
+    databaseName: conference_hub
+    user: conference
+    postgresMajorVersion: "16"
