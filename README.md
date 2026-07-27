@@ -1,12 +1,14 @@
 # HEP Conference Hub
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21611863.svg)](https://doi.org/10.5281/zenodo.21611863)
+
 **Portal auditável para descoberta, acompanhamento e organização de congressos, simpósios, workshops e escolas de física de altas energias.**
 
 [![CI](https://github.com/ncevidanes/hep-conference-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ncevidanes/hep-conference-hub/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](CHANGELOG.md)
 
-> DOI do Zenodo: será acrescentado após a publicação da primeira release.
+**DOI da versão 1.0.0:** [10.5281/zenodo.21611863](https://doi.org/10.5281/zenodo.21611863)
 
 ## Objetivo
 
