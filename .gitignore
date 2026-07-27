@@ -24,3 +24,16 @@ apps/crawler/output/
 .DS_Store
 .idea/
 .vscode/
+
+# Artefatos de compilação LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.toc
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+docs/latex/main.pdf
