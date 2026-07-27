@@ -11,6 +11,7 @@ repository-code: "https://github.com/ncevidanes/hep-conference-hub"
 url: "https://github.com/ncevidanes/hep-conference-hub"
 version: "1.0.0"
 date-released: "2026-07-26"
+doi: "10.5281/zenodo.21611863"
 license: MIT
 keywords:
   - high-energy physics
@@ -28,3 +29,15 @@ abstract: >-
   conferences, symposia, workshops and schools in high-energy physics. It
   separates event, submission and registration status and preserves source,
   evidence excerpt, confidence and verification time.
+
+preferred-citation:
+  type: software
+  title: "HEP Conference Hub: An Auditable Portal for Discovering and Monitoring High-Energy Physics Events"
+  authors:
+    - family-names: "de Assis"
+      given-names: "Nelson Cevidanes Nascimento"
+  version: "1.0.0"
+  year: 2026
+  doi: "10.5281/zenodo.21611863"
+  publisher:
+    name: "Zenodo"

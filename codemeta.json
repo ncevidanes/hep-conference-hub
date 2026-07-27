@@ -8,6 +8,9 @@
   "datePublished": "2026-07-26",
   "codeRepository": "https://github.com/ncevidanes/hep-conference-hub",
   "issueTracker": "https://github.com/ncevidanes/hep-conference-hub/issues",
+  "identifier": "https://doi.org/10.5281/zenodo.21611863",
+  "sameAs": "https://doi.org/10.5281/zenodo.21611863",
+  "citation": "Assis, Nelson Cevidanes Nascimento de. (2026). HEP Conference Hub: An Auditable Portal for Discovering and Monitoring High-Energy Physics Events (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21611863",
   "license": "https://spdx.org/licenses/MIT",
   "author": [
     {

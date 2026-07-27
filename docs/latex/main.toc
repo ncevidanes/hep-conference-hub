@@ -1,0 +1,109 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Controle do documento}{1}{chapter*.2}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Visão geral e objetivos}}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Público-alvo}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Princípios de projeto}{6}{section.1.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Evolução da implementação por prioridades}}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estratégia incremental}{8}{section.2.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Requisitos funcionais e não funcionais}}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisitos funcionais}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Requisitos não funcionais}{10}{section.3.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Arquitetura do sistema}}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Serviços principais}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Fluxo de dados}{13}{section.4.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Tecnologias utilizadas}}{14}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Compatibilidade Scrapy/Twisted}{14}{section.5.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Organização do repositório}}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Responsabilidades por diretório}{15}{section.6.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Modelo de dados}}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Event}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.2}CallForPapers / chamadas}{17}{section.7.2}%
+\contentsline {section}{\numberline {7.3}RegistrationWindow}{17}{section.7.3}%
+\contentsline {section}{\numberline {7.4}EventResource}{17}{section.7.4}%
+\contentsline {section}{\numberline {7.5}VerificationMixin}{18}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Estados independentes}{18}{section.7.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase []{API REST}}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Endpoints principais}{19}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Filtros de consulta}{19}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Exemplo de consulta regional}{19}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Estrutura resumida da resposta}{20}{section.8.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase []{Frontend web}}{21}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Elementos de interface}{21}{section.9.1}%
+\contentsline {section}{\numberline {9.2}EventCard}{21}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Exemplo de apresentação}{21}{section.9.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {10}\MakeTextUppercase []{Crawler e extração de informações}}{22}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Configurações responsáveis}{22}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Descoberta semântica de páginas}{22}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Extração de prazos}{22}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Conflitos}{22}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Spiders}{23}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Saídas}{23}{section.10.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {11}\MakeTextUppercase []{Processamento assíncrono}}{24}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Cuidados operacionais}{24}{section.11.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {12}\MakeTextUppercase []{Catálogo e expansão para a América Latina}}{25}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Eventos centrais cadastrados}{25}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Fontes de descoberta}{25}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Regra de publicação}{26}{section.12.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {13}\MakeTextUppercase []{Auditoria, confiança e rastreabilidade}}{27}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Confiança}{27}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Recência}{27}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Evidência mínima}{27}{section.13.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {14}\MakeTextUppercase []{Testes e garantia da qualidade}}{29}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Grupos de testes}{29}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Comando de teste}{29}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Critérios de aceitação}{29}{section.14.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {15}\MakeTextUppercase []{Docker, configuração e implantação}}{31}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Variáveis de ambiente}{31}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Construção e subida}{31}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Seed}{31}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Preservação do banco}{31}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Reconstrução seletiva}{31}{section.15.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {16}\MakeTextUppercase []{Operação diária}}{32}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Verificação de serviços}{32}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Consulta de eventos latino-americanos}{32}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Ambiente local do crawler}{32}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Coleta regional}{32}{section.16.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {17}\MakeTextUppercase []{Problemas encontrados e correções}}{34}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Procedimento seguro para substituição da árvore}{35}{section.17.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {18}\MakeTextUppercase []{Segurança, ética e conformidade}}{36}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Riscos de dados}{36}{section.18.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {19}\MakeTextUppercase []{Limitações atuais e roadmap}}{37}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Limitações}{37}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Prioridade 6}{37}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Melhorias recomendadas}{37}{section.19.3}%
+\vspace {\cftbeforechapterskip }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{Appendices}{38}{section*.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Sequência de instalação limpa}}{39}{appendix.A}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Checklist de release}}{40}{appendix.B}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Glossário}}{41}{appendix.C}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Referência rápida de comandos}}{42}{appendix.D}%
