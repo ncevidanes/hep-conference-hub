@@ -1,6 +1,7 @@
 services:
   - type: web
     name: hep-conference-hub-api-ncevidanes
+    autoDeployTrigger: checksPass
     runtime: docker
     plan: free
     rootDir: apps/api
@@ -19,6 +20,7 @@ services:
 
   - type: web
     name: hep-conference-hub-web-ncevidanes
+    autoDeployTrigger: checksPass
     runtime: docker
     plan: free
     rootDir: apps/web
